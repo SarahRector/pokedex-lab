@@ -12,11 +12,13 @@ export default class Search extends Component {
         pokeState: [],
         isLoading: false,
         searchBy: 'pokemon',
+        currentPage: 1,
+        totalPages: 1
         }
     
         handleClick = async () => {
             this.setState({ isLoading: true })
-            const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?perPage=100&${this.state.searchBy}=${this.state.search}`)
+            const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex?page=${this.state.currentPage}&perPage=100&${this.state.searchBy}=${this.state.search}`)
     
             this.setState({
             pokeState: data.body.results,
