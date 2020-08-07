@@ -5,15 +5,14 @@ import PokeItem from './PokeItem';
 
 
 export default class PDex extends React.Component {
- 
 
     render() {
         return (
-            <div> 
-                 {
+            <div className="pdex"> 
+                {
                     
-                        this.props.pokeState.map(poke => <PokeItem key={poke._id} pokemon={poke.pokemon} image={poke.url_image} ability={poke.ability_1} type={poke.type_1}/>)
-                 }
+                        this.props.pokeState.map(poke => <PokeItem key={poke._id} pokemon={poke.pokemon} image={poke.url_image}/>)
+                }
 
 
                         
