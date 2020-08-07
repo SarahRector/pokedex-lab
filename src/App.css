@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 .App {
   text-align: center;
 }
-
-
 
 .spin {
   animation: App-logo-spin infinite .3s linear;
@@ -15,6 +15,8 @@
   margin-top: 5%;
   margin-left: 30%;
   margin-right: 30%;
+  font-family: 'Marck Script', cursive;
+  font-size: large;
 }
 
 
@@ -23,28 +25,43 @@ header {
   text-align: center;
   font-size: xx-large;
   font-weight: bolder;
+  font-family: 'Marck Script', cursive;
   padding: 20px;
+  width: 100%;
 }
 nav {
   background-color: maroon;
   text-align: center;
   color: white;
-}
-
-.searchBar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20px;
-
+  font-family: 'Marck Script', cursive;
+  font-weight: bold;
+  font-size: large;
 }
+.searchBar {
+  background-color: maroon;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  float: left;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 3000px;
+}
+
 input, select, button {
   max-width: 150px;
   border: solid 3px grey;
   border-radius: 5px;
   padding: 5px;
   margin: 4px;
+  font-family: 'Marck Script', cursive;
 }
 img {
   width: 200px;
@@ -57,4 +74,6 @@ img {
   margin-top: 3%;
   margin-right: 10%;
   margin-left: 10%;
+  font-family: 'Marck Script', cursive;
+  font-size: larger;
 }
