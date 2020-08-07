@@ -94,7 +94,7 @@ export default class Search extends Component {
             <div className="pageBody"> 
                 <Header></Header>
                 <Nav></Nav>
-                <SearchBar handleClick={this.handleClick} handleChange={this.handleChange} handleSearchBy={this.handleSearchBy}></SearchBar>
+                <SearchBar handleClick={this.handleClick} handleChange={this.handleChange} handleSearchBy={this.handleSearchBy} search={this.state.search} searchBy={this.state.searchBy}></SearchBar>
                 <PDex pokeState={this.state.pokeState} handleNextClick={this.handleNextClick} handlePrevClick={this.handlePrevClick}
                 currentPage={currentPage}
                 totalPages={totalPages} />

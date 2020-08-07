@@ -4,10 +4,11 @@ export default class SearchBar extends Component {
     
     render() {
         
+        
         return (
             <div className='searchBar'>
-                <input onChange={this.props.handleChange} />
-                <select onChange={this.props.handleSearchBy}>
+                <input onChange={this.props.handleChange} value={this.props.search} />
+                <select onChange={this.props.handleSearchBy} value={this.props.searchBy}>
                     <option value='pokemon'>Name</option>
                     <option value='type'>Type</option>
                     <option value='attack'>Attack</option>
