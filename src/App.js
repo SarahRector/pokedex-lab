@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
 } from 'react-router-dom';
 import Search from './SearchPage/Search.js';
 import './App.css';
