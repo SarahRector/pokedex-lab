@@ -66,6 +66,7 @@ input, select, button {
 img {
   width: 200px;
   height: 200px;
+  filter: drop-shadow(5px 10px 15px rgb(99, 97, 96));
 }
 .pdex {
   display: grid;
